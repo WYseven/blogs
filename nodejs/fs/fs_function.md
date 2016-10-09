@@ -43,20 +43,23 @@ fs.writeFile(fileName,data,[options],[callback(error,data)]);
 ```
 - fileName  <String>  
     文件名
+ 
 - data <String> | <Buffer>
     写入文件的数据，字符串或Buffer
+    
 - options <Object> | <String>
     设置参数
-    ```
-    encoding <String> | <Null>
+	```
+	encoding <String> | <Null>
 		编码，default = 'utf-8'
 	mode <Number>
 		文件模式（权限），default = 0o666
 	flag <String>
 		操作模式，default = 'w'
-    ```
+	```
 - callback <Function>
     回调函数
+
 
 **fs.appendFile**
 异步操作追加数据到指定文件
@@ -69,14 +72,14 @@ fs.writeFile(fileName,data,[options],[callback(error,data)]);
     写入文件的数据，字符串或Buffer
 - options <Object> | <String>
     设置参数
-    ```
-    encoding <String> | <Null>
+	```
+	encoding <String> | <Null>
 		编码，default = 'utf-8'
 	mode <Number>
 		文件模式（权限），default = 0o666
 	flag <String>
 		操作模式，default = 'a'
-    ```
+	```
 - callback <Function> 
     回调函数
 
