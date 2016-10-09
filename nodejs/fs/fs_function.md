@@ -17,23 +17,24 @@ fs模块学习笔记
 异步读取文件内容
 ```
 fs.writeFile(fileName,[options],[callback(error,data)]);
-```
 - fileName  <String>  
     文件名
 - options <Object> | <String>
     设置参数
-    ```
+    
     encoding <String> | <Null>
 		编码，default = null
 	flag <String>
 		操作模式，default = 'r'
-    ```
+    
 - callback 回调函数
-    ```
+    
     参数：
         error 错误信息
         data 读取的内容
-    ```
+    
+```
+
 *如果没用指定encoding，返回原生的buffer*
 
 **fs.writeFile**
