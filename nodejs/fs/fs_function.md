@@ -40,7 +40,7 @@ fs.writeFile(fileName,[options],[callback(error,data)]);
 异步写入文件内容，如果文件存在则替换文件的内容，可以写入字符串或buffer数据
 ```
 fs.writeFile(fileName,data,[options],[callback(error,data)]);
-```
+
 - fileName  <String>  
     文件名
  
@@ -59,13 +59,15 @@ fs.writeFile(fileName,data,[options],[callback(error,data)]);
 	```
 - callback <Function>
     回调函数
+```
+
 
 
 **fs.appendFile**
 异步操作追加数据到指定文件
 ```
 fs.writeFile(fileName,data,[options],[callback(error,data)]);
-```
+
 - fileName  <String>  
     文件名
 - data <String> | <Buffer>
@@ -82,6 +84,8 @@ fs.writeFile(fileName,data,[options],[callback(error,data)]);
 	```
 - callback <Function> 
     回调函数
+```
+
 
 **fs.unlink**
 异步删除指定的文件，如果删除的文件不存在，则会抛出一个错误
