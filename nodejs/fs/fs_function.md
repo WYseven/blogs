@@ -17,68 +17,76 @@ fs模块学习笔记
 异步读取文件内容
 ```
 fs.writeFile(fileName,[options],[callback(error,data)]);
-```
 - fileName  <String>  
     文件名
 - options <Object> | <String>
     设置参数
-    ```
+    
     encoding <String> | <Null>
 		编码，default = null
 	flag <String>
 		操作模式，default = 'r'
-    ```
+    
 - callback 回调函数
-    ```
+    
     参数：
         error 错误信息
         data 读取的内容
-    ```
+    
+```
+
 *如果没用指定encoding，返回原生的buffer*
 
 **fs.writeFile**
 异步写入文件内容，如果文件存在则替换文件的内容，可以写入字符串或buffer数据
 ```
 fs.writeFile(fileName,data,[options],[callback(error,data)]);
-```
+
 - fileName  <String>  
     文件名
+ 
 - data <String> | <Buffer>
     写入文件的数据，字符串或Buffer
+    
 - options <Object> | <String>
     设置参数
-    ```
-    encoding <String> | <Null>
+	```
+	encoding <String> | <Null>
 		编码，default = 'utf-8'
 	mode <Number>
 		文件模式（权限），default = 0o666
 	flag <String>
 		操作模式，default = 'w'
-    ```
+	```
 - callback <Function>
     回调函数
+```
+
+
 
 **fs.appendFile**
 异步操作追加数据到指定文件
 ```
 fs.writeFile(fileName,data,[options],[callback(error,data)]);
-```
+
 - fileName  <String>  
     文件名
 - data <String> | <Buffer>
     写入文件的数据，字符串或Buffer
 - options <Object> | <String>
     设置参数
-    ```
-    encoding <String> | <Null>
+	```
+	encoding <String> | <Null>
 		编码，default = 'utf-8'
 	mode <Number>
 		文件模式（权限），default = 0o666
 	flag <String>
 		操作模式，default = 'a'
-    ```
+	```
 - callback <Function> 
     回调函数
+```
+
 
 **fs.unlink**
 异步删除指定的文件，如果删除的文件不存在，则会抛出一个错误
